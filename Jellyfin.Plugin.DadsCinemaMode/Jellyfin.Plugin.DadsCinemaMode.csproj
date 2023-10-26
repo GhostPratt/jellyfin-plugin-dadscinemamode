@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <RootNamespace>jellyfin_plugin_dadscinemamode</RootNamespace>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>disable</Nullable>
+        <AssemblyVersion>1.0.0</AssemblyVersion>
+        <FileVersion>1.0.0</FileVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Jellyfin.Controller" Version="10.8.11" />
+      <PackageReference Include="Jellyfin.Model" Version="10.8.11" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Configuration\config.html" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="config.html" />
+    </ItemGroup>
+
+</Project>
