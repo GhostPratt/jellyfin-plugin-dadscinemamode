@@ -18,8 +18,9 @@
       <None Remove="Configuration\config.html" />
     </ItemGroup>
 
+
     <ItemGroup>
-      <EmbeddedResource Include="config.html" />
+      <EmbeddedResource Include="Configuration\config.html" />
     </ItemGroup>
 
 </Project>
