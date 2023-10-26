@@ -43,7 +43,7 @@ namespace Jellyfin.Plugin.DadsCinemaMode
             yield return new PluginPageInfo
             {
                 Name = Name,
-                EmbeddedResourcePath = GetType().Namespace + ".Configuration.config.html"
+                EmbeddedResourcePath = $"{GetType().Namespace}.Configuration.config.html"
             };
         }
     }
