@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿#nullable enable
+
+using jellyfin_plugin_dadscinemamode.Configuration;
 using Jellyfin.Data.Entities;
+using Jellyfin.Data.Enums;
 using MediaBrowser.Controller.Entities;
 using MediaBrowser.Controller.Entities.Movies;
 using MediaBrowser.Controller.Library;
-using Jellyfin.Data.Enums;
 
-#nullable enable
-
-namespace Jellyfin.Plugin.DadsCinemaMode
+namespace jellyfin_plugin_dadscinemamode
 {
 
     class TrailerSelector
@@ -17,7 +15,7 @@ namespace Jellyfin.Plugin.DadsCinemaMode
         private List<Movie> Trailers { get; set; } = new List<Movie>() { };
         private int Returned { get; set; } = 0;
         private Random RNG { get; }
-        private Jellyfin.Plugin.DadsCinemaMode.Configuration.PluginConfiguration Config { get; }
+        private PluginConfiguration Config { get; }
         private BaseItem Feature { get; }
         private User User { get; }
 
@@ -42,7 +40,7 @@ namespace Jellyfin.Plugin.DadsCinemaMode
             }
         }
 
-        public TrailerSelector(BaseItem Feature, User User, Jellyfin.Plugin.DadsCinemaMode.Configuration.PluginConfiguration Config)
+        public TrailerSelector(BaseItem Feature, User User, PluginConfiguration Config)
         {
             this.RNG = new Random();
             this.Config = Config;

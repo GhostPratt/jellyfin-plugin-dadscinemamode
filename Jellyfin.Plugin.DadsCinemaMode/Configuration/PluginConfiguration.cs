@@ -1,7 +1,6 @@
-﻿using System;
-using MediaBrowser.Model.Plugins;
+﻿using MediaBrowser.Model.Plugins;
 
-namespace Jellyfin.Plugin.DadsCinemaMode.Configuration
+namespace jellyfin_plugin_dadscinemamode.Configuration
 {
     public class PluginConfiguration : BasePluginConfiguration
     {

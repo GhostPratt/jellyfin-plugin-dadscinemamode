@@ -1,11 +1,8 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Jellyfin.Data.Entities;
+﻿using Jellyfin.Data.Entities;
 using MediaBrowser.Controller.Entities;
 using MediaBrowser.Controller.Library;
 
-namespace Jellyfin.Plugin.DadsCinemaMode
+namespace jellyfin_plugin_dadscinemamode
 {
     public class IntroProvider : IIntroProvider
     {

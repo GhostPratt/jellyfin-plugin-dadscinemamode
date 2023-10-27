@@ -1,21 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Threading;
-using System.Threading.Tasks;
+﻿using System.Globalization;
+using Jellyfin.Data.Enums;
 using MediaBrowser.Common.Progress;
 using MediaBrowser.Controller.Channels;
-using MediaBrowser.Controller.Providers;
 using MediaBrowser.Controller.Entities;
+using MediaBrowser.Controller.Providers;
 using MediaBrowser.Model.Channels;
 using MediaBrowser.Model.Dto;
 using MediaBrowser.Model.Entities;
 using MediaBrowser.Model.MediaInfo;
 using MediaBrowser.Model.Tasks;
-using Jellyfin.Data.Enums;
 using Microsoft.Extensions.Logging;
 
-namespace Jellyfin.Plugin.DadsCinemaMode.Channels;
+namespace jellyfin_plugin_dadscinemamode.Channels;
 
 /// <summary>
 /// Trailers Channel.

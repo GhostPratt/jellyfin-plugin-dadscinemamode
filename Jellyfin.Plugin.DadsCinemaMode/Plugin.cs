@@ -1,16 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using Jellyfin.Plugin.DadsCinemaMode.Configuration;
+﻿using jellyfin_plugin_dadscinemamode.Configuration;
 using MediaBrowser.Common.Configuration;
 using MediaBrowser.Common.Plugins;
+using MediaBrowser.Controller;
+using MediaBrowser.Controller.Channels;
 using MediaBrowser.Controller.Library;
 using MediaBrowser.Model.Plugins;
 using MediaBrowser.Model.Serialization;
-using MediaBrowser.Controller;
-using MediaBrowser.Controller.Channels;
 using Microsoft.Extensions.Logging;
 
-namespace Jellyfin.Plugin.DadsCinemaMode
+namespace jellyfin_plugin_dadscinemamode
 {
     public class Plugin : BasePlugin<PluginConfiguration>, IHasWebPages
     {
